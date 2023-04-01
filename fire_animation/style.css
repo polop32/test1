@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+}
+
+.fire {
+  width: 220px;
+  height: 350px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fireAnimation 0.7s steps(6) infinite;
+}
+
+@keyframes fireAnimation {
+  0% {
+    background-image: url('feu1.png');
+  }
+  25% {
+    background-image: url('feu2.png');
+  }
+  50% {
+    background-image: url('feu3.png');
+  }
+  75% {
+    background-image: url('feu4.png');
+  }
+  100% {
+    background-image: url('feu1.png');
+  }
+}
